@@ -1,7 +1,7 @@
 <template>
   <div :class="`vp-doc ${$style.promo}`">
     <h1 :class="$style.hed">Build your best work with Plot on Observable</h1>
-    <div :class="$style.subhed">The only data workflow platform capable of supporting the full power of Plot</div>
+    <div :class="$style.subhead">The only data workflow platform capable of supporting the full power of Plot</div>
     <div :class="$style.columns">
       <div :class="$style.column">
         <span :class="$style['column-header']">Connect to your data instantly</span>
@@ -46,18 +46,18 @@ h1 {
 }
 
 .hed,
-.subhed,
+.subhead,
 .column {
   padding: 0 24px;
 }
 
 .hed,
-.subhed,
+.subhead,
 .column-header {
   text-wrap: balance;
 }
 
-.subhed {
+.subhead {
   margin-top: 1rem;
   opacity: 0.7;
 }
@@ -112,7 +112,7 @@ a.button:hover {
   .promo {
     padding: 0 64px;
   }
-  .subhed {
+  .subhead {
     margin-top: 0.5rem;
   }
   .columns {
