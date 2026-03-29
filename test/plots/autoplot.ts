@@ -126,7 +126,7 @@ export async function autoConnectedScatterplot() {
   return Plot.auto(driving, {x: "miles", y: "gas", mark: "line"}).plot();
 }
 
-// shouldnt make a line
+// shouldn't make a line
 export async function autoDotUnsortedDate() {
   const athletes = await d3.csv<any>("data/athletes.csv", d3.autoType);
   return Plot.auto(athletes, {x: "date_of_birth", y: "height"}).plot();
