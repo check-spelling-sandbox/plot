@@ -45,8 +45,8 @@ ${[
   });
 }
 
-function recase(hypenated) {
-  return hypenated
+function recase(hyphenated) {
+  return hyphenated
     .split(/-/g)
     .map((part) => `${part[0].toUpperCase()}${part.substring(1)}`)
     .join(" ");
