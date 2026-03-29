@@ -283,7 +283,7 @@ In addition, a reducer may be specified as:
 
 In the last case, the **reduceIndex** method is repeatedly passed three arguments: the index for each bin (an array of integers), the input channel’s array of values, and the extent of the bin (an object {data, x1, x2, y1, y2}); it must then return the corresponding aggregate value for the bin.
 
-If the reducer object’s **scope** is *data*, then the **reduceIndex** method is first invoked for the full data; the return value of the **reduceIndex** method is then made available as a third argument (making the extent the fourth argument). Similarly if the **scope** is *facet*, then the **reduceIndex** method is invoked for each facet, and the resulting reduce value is made available while reducing the facet’s bins. (This optional **scope** is used by the *proportion* and *proportion-facet* reducers.)
+If the reducer object’s **scope** is *data*, then the **reduceIndex** method is first invoked for the full data; the return value of the **reduceIndex** method is then made available as a third argument (making extent the fourth argument). Similarly if the **scope** is *facet*, then the **reduceIndex** method is invoked for each facet, and the resulting reduce value is made available while reducing the facet’s bins. (This optional **scope** is used by the *proportion* and *proportion-facet* reducers.)
 
 Most reducers require binding the output channel to an input channel; for example, if you want the **y** output channel to be a *sum* (not merely a count), there should be a corresponding **y** input channel specifying which values to sum. If there is not, *sum* will be equivalent to *count*.
 
