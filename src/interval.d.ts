@@ -75,7 +75,7 @@ export interface RangeIntervalImplementation<T> extends IntervalImplementation<T
 
 /**
  * A custom interval implementation that also supports the range and ceil
- * methods, used for nicing scale domains.
+ * methods, used to generate nice scale domains.
  */
 export interface NiceIntervalImplementation<T> extends RangeIntervalImplementation<T> {
   /**
