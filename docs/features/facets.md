@@ -59,7 +59,7 @@ This plot uses the [**sort** mark option](./scales.md#sort-mark-option) to order
 Use the [frame mark](../marks/frame.md) for stronger visual separation of facets.
 :::
 
-The chart above reveals a likely data collection error: the years appear to be reversed for the Morris site as it is the only site where the yields in <span :style="{borderBottom: `solid 2px ${scheme[1]}`}">1932</span> were higher than in <span :style="{borderBottom: `solid 2px ${scheme[0]}`}">1931</span>. The anomaly in Morris is more obvious if we use directed arrows to show the year-over-year change. The [group transform](../transforms/group.md) groups the observations by site and variety to compute the change.
+The chart above reveals a likely data collection error: the years appear to be reversed for the Morris site as it is the only site where the yields in <span :style="{borderBottom: `solid 2px ${scheme[1]}`}">1932</span> were greater than in <span :style="{borderBottom: `solid 2px ${scheme[0]}`}">1931</span>. The anomaly in Morris is more obvious if we use directed arrows to show the year-over-year change. The [group transform](../transforms/group.md) groups the observations by site and variety to compute the change.
 
 :::plot defer https://observablehq.com/@observablehq/plot-trellis-anomaly
 ```js
